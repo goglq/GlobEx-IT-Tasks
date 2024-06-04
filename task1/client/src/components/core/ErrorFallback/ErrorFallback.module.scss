@@ -1,0 +1,30 @@
+@use 'variables';
+
+.error-fallback {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+
+  h1 {
+    color: variables.$title-color;
+  }
+
+  button {
+    border: 1px solid variables.$searchbar-border-color;
+    border-radius: 2rem;
+    outline: none;
+    padding: 0.5rem 1rem;
+
+    font-size: 1.125rem;
+
+    color: variables.$title-color;
+    background: transparent;
+
+    cursor: pointer;
+
+    transition: 200ms ease-in-out;
+    &:hover {
+      background-color: variables.$searchbar-border-color;
+    }
+  }
+}

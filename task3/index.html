@@ -1,0 +1,19 @@
+<%
+    _query = "for $elem in collaborators return $elem/fullname";
+    var _items = XQuery(_query);
+%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebSoft Web</title>
+</head>
+<body>
+    <h1>Сотрудники</h1>
+    <ul>
+        <%for (i in _items) {%>
+            <li><%=i%></li>
+        <%}%>
+    </ul>
+</body>
+</html>

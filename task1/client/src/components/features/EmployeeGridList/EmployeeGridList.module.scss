@@ -1,0 +1,19 @@
+.employee-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  row-gap: 1.5rem;
+  column-gap: 1.5rem;
+}
+
+@media screen and (max-width: 1280px) {
+  .employee-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .employee-grid {
+    grid-template-columns: 1fr;
+  }
+}
